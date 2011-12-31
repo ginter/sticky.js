@@ -66,7 +66,7 @@
           stop(true, false).
           animate({ marginTop : marginTop }, settings.duration, settings.easing);
         } else {
-          self.css($.extend({}, initialState, { position : 'static', marginTop : marginTop }));
+          self.css($.extend({}, initialState, { position : initialState.position, marginTop : marginTop }));
         }
         position = initialState.position;
       },
